@@ -1,0 +1,10 @@
+Please discuss the short comings and possible improvements to your
+algorithm if you had infinite time.
+-----------------------------------------------------------------
+For the shuffle algorithm, I would certianly put more time into understanding how to add a layer of "true randomness". Randomly generating cards or numbers is impossible because nothing coded can be truly "random", but I certainly could have made swap transitions in so many different ways that it would seem random.
+
+A shortcoming to my algorithm is that it will shuffle to the same deck if you only shuffle once every time. However, if you shuffle multiple times, the decks will be different.
+
+The efficiency of my shuffle method is around O(n^2) because of the nested for loop in the while loop. However, as more shuffling occurs, "n" comparisons are not mad because I'm changing the interval. I only initialize a temp Card object and two ints, so I feel like space-wise, it didn't do too poorly.
+
+Overall, my shuffle method could have been more mathematically in-depth, but for the purposes of giving a basic idea, I think it's alright. You can change the swapping intervals to any number under 53, but I figured doing a few cycles of switching suits/ranks would work alright.
